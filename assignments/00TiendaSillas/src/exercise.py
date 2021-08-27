@@ -12,11 +12,13 @@ def calcula_descuento(precio, tipo_cl) :
     # Agrega aquí el código de la funcion
     if tipo_cl=='F':
         desc=precio*0.2
-    elif tipo_cl=='N':
+    else:
         if precio>=10000 and precio<20000:
             desc=precio*0.1
         elif precio >=20000:
             desc=precio*0.15 
+        else:
+            desc=0.0
     return desc
 
 def main() :
