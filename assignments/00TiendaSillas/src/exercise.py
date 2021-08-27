@@ -4,7 +4,7 @@ def precio_antes_descuento(tipo_silla, cantidad) :
         precio=cantidad*700.0
     elif tipo_silla=='E':
         precio=cantidad*900.0
-    elif tipo_silla=='L':
+    else:
         precio=cantidad*1500.0
     return precio
 
